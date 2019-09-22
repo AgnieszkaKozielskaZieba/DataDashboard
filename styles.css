@@ -1,0 +1,101 @@
+/*svg{
+	margin: 0 auto;
+	display: block;
+}*/
+
+header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	background-color: lightgrey;
+	padding: 20px;
+}
+
+header div{
+	display: block;
+	margin: 0 10px;
+	
+}
+
+label{
+	vertical-align: top;
+}
+path{
+	stroke:#ccc;
+	stroke-width:0.25px;
+}
+
+.axis path{
+	stroke:black;
+	stroke-width:1px;
+}
+
+.tooltip{
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	border: grey solid 2px;
+	background-color: rgba(255,255,255,0.5);
+	padding: 0 10px;
+}
+
+.tooltip p{
+	margin: 5px;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#mapContainer{
+	/*height: 200px;*/
+	width: 100%;
+	/*background-color: blue;*/
+}
+#chartsContainer{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+#pieChartContainer{
+	/*height: 100px;*/
+	width: 100%;
+	/*background-color: yellow;*/
+}
+#countryChartContainer{
+	/*height: 100px;	*/
+	width: 100%;
+	/*background-color: red;*/
+}
+
+@media (min-width: 640px){
+#pieChartContainer{
+	width: 50%;
+}
+#countryChartContainer{
+	width: 50%;
+}
+}
+ 
+@media (min-width: 1024px){
+#mapContainer{
+	width: 70%;
+}
+#chartsContainer{
+	width: 30%;
+	box-sizing: border-box;
+}
+#pieChartContainer{
+	padding: 10%;
+	padding-bottom: 0;
+	padding-top: 0;
+	width: 80%;
+}
+#countryChartContainer{
+	padding: 10%;
+	padding-bottom: 0;
+	padding-top: 0;
+	width: 80%;
+}
+}
+ 
