@@ -3,14 +3,22 @@
 	display: block;
 }*/
 
+body{
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
 header{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-end;
+	justify-content: space-between;
+	align-items: center;
 	background-color: lightgrey;
-	padding: 20px;
+	padding: 5px 0;
 }
 
+header h1{
+	margin:0 20px;
+}
 header div{
 	display: block;
 	margin: 0 10px;
@@ -21,7 +29,7 @@ label{
 	vertical-align: top;
 }
 path{
-	stroke:#ccc;
+	stroke:rgb(50,50,50);
 	stroke-width:0.25px;
 }
 
@@ -77,25 +85,20 @@ path{
 }
 }
  
-@media (min-width: 1024px){
+@media (min-width: 1300px){
 #mapContainer{
-	width: 70%;
+	width: 65%;
 }
 #chartsContainer{
 	width: 30%;
+	padding: 0 4%;
 	box-sizing: border-box;
 }
 #pieChartContainer{
-	padding: 10%;
-	padding-bottom: 0;
-	padding-top: 0;
-	width: 80%;
+	width: 100%;
 }
 #countryChartContainer{
-	padding: 10%;
-	padding-bottom: 0;
-	padding-top: 0;
-	width: 80%;
+	width: 100%;
 }
 }
  
