@@ -3,11 +3,11 @@
 	display: block;
 }*/
 
-body{
+body {
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
-header{
+header {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -16,89 +16,87 @@ header{
 	padding: 5px 0;
 }
 
-header h1{
-	margin:0 20px;
+header h1 {
+	margin: 0 20px;
 }
-header div{
+header div {
 	display: block;
 	margin: 0 10px;
-	
 }
 
-label{
+label {
 	vertical-align: top;
 }
-path{
-	stroke:rgb(50,50,50);
-	stroke-width:0.25px;
+path {
+	stroke: rgb(50, 50, 50);
+	stroke-width: 0.25px;
 }
 
-.axis path{
-	stroke:black;
-	stroke-width:1px;
+.axis path {
+	stroke: black;
+	stroke-width: 1px;
 }
 
-.tooltip{
+.tooltip {
 	position: absolute;
 	opacity: 0;
 	pointer-events: none;
 	border: grey solid 2px;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255, 255, 255, 0.5);
 	padding: 0 10px;
 }
 
-.tooltip p{
+.tooltip p {
 	margin: 5px;
 }
-.container{
+.container {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-#mapContainer{
+#mapContainer {
 	/*height: 200px;*/
 	width: 100%;
 	/*background-color: blue;*/
 }
-#chartsContainer{
+#chartsContainer {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
-#pieChartContainer{
+#pieChartContainer {
 	/*height: 100px;*/
 	width: 100%;
 	/*background-color: yellow;*/
 }
-#countryChartContainer{
+#countryChartContainer {
 	/*height: 100px;	*/
 	width: 100%;
 	/*background-color: red;*/
 }
 
-@media (min-width: 640px){
-#pieChartContainer{
-	width: 50%;
+@media (min-width: 640px) {
+	#pieChartContainer {
+		width: 50%;
+	}
+	#countryChartContainer {
+		width: 50%;
+	}
 }
-#countryChartContainer{
-	width: 50%;
+
+@media (min-width: 1300px) {
+	#mapContainer {
+		width: 65%;
+	}
+	#chartsContainer {
+		width: 30%;
+		padding: 0 4%;
+		box-sizing: border-box;
+	}
+	#pieChartContainer {
+		width: 100%;
+	}
+	#countryChartContainer {
+		width: 100%;
+	}
 }
-}
- 
-@media (min-width: 1300px){
-#mapContainer{
-	width: 65%;
-}
-#chartsContainer{
-	width: 30%;
-	padding: 0 4%;
-	box-sizing: border-box;
-}
-#pieChartContainer{
-	width: 100%;
-}
-#countryChartContainer{
-	width: 100%;
-}
-}
- 

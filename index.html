@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>CO2 Emissions</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body>
+	<head>
+		<title>CO2 Emissions</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1>CO2 EMISSIONS</h1>
+			<div>
+				<div>
+					<input
+						type="radio"
+						id="EmissionsPerCapita"
+						name="Emissions"
+						value="emissionsPerCapita"
+					/>
+					<label for="emissionsPerCapita">Emissions per capita</label>
+				</div>
 
-<header>
-<h1>CO2 EMISSIONS</h1>
-<div>
-<div>
-  <input type="radio" id="EmissionsPerCapita" name="Emissions" value="emissionsPerCapita">
-  <label for="emissionsPerCapita">Emissions per capita</label>
-</div>
+				<div>
+					<input
+						type="radio"
+						id="EmissionsTotal"
+						name="Emissions"
+						value="emissions"
+						checked
+					/>
+					<label for="emissions">Total emissions</label>
+				</div>
+				<div>
+					<label id="selYearLabel" for="selYear">Year</label>
+					<input type="range" step="1" name="" id="selYear" />
+				</div>
+			</div>
+		</header>
 
-<div>
-  <input type="radio" id="EmissionsTotal" name="Emissions" value="emissions" checked>
-  <label for="emissions">Total emissions</label>
-</div>
-<div>
-<label id="selYearLabel" for="selYear">Year</label>
-<input type="range" step="1" name="" id="selYear">
-</div>
-</div>
-</header>
+		<div class="tooltip"></div>
+		<div class="container">
+			<div id="mapContainer">
+				<svg id="map"></svg>
+			</div>
 
-<div class="tooltip"></div>
-<div class="container">
-	<div id="mapContainer">
-		<svg id="map"></svg>
-	</div>
-	
-<div id="chartsContainer">
-<div id="pieChartContainer">
-	<svg id="pieChart"></svg>
-</div>	
-<div id="countryChartContainer">
-	<svg id="countryChart"></svg>
-</div>
-</div>
-</div>
+			<div id="chartsContainer">
+				<div id="pieChartContainer">
+					<svg id="pieChart"></svg>
+				</div>
+				<div id="countryChartContainer">
+					<svg id="countryChart"></svg>
+				</div>
+			</div>
+		</div>
 
-<script src="https://d3js.org/d3.v4.js"></script>
-<script src="https://unpkg.com/topojson@3"></script>
-<script src="app.js"></script>
-</body>
+		<script src="https://d3js.org/d3.v4.js"></script>
+		<script src="https://unpkg.com/topojson@3"></script>
+		<script src="app.js"></script>
+	</body>
 </html>
